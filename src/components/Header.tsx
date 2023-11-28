@@ -3,8 +3,8 @@ import Image from 'next/image'
 import React from 'react'
 import styled from 'styled-components'
 import { Raleway } from 'next/font/google'
+const raleway = Raleway({ subsets: ['latin'], weight: ['100', '400', '900'] })
 
-const raleway = Raleway({ subsets: ['latin'] })
 export default function Header() {
 
 
@@ -13,8 +13,8 @@ export default function Header() {
             <Content>
                 <div>
                     <Title>Kimani Walker</Title>
-                    <Title>Software Engineer</Title>
-                    <Title>Crafting Digital Experiences | JavaScript, TypeScript, React, Next.js Enthusiast</Title>
+                    <SubTitle>Software Engineer</SubTitle>
+                    <SubHeading>Crafting Digital Experiences | JavaScript, TypeScript, React, Next.js Enthusiast</SubHeading>
                 </div>
                 <Image src="/headshot.png" width={368} height={368} alt='headshot' />
             </Content>
@@ -24,15 +24,31 @@ export default function Header() {
 }
 
 const Wrapper = styled.div`
-    height: 480px;
+    min-height: 480px;
     width: 100%;
-    max-width: 1440px;
     background-color: yellow;
     display: flex;
     align-items: center;
 `
 const Title = styled.h1`
     font-family: ${raleway.style.fontFamily};
+    color: white;
+    font-size: 64px;
+    z-index: 99;
+    margin: 0;
+    font-weight: 900;
+`
+const SubTitle = styled.h3`
+    font-family: ${raleway.style.fontFamily};
+    font-weight: 400;
+    color: white;
+    font-size: 48px;
+    z-index: 99;
+    margin: 0;
+`
+const SubHeading = styled.h4`
+    font-family: ${raleway.style.fontFamily};
+    font-weight: 100;
     color: white;
     font-size: 48px;
     z-index: 99;
