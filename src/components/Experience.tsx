@@ -13,29 +13,12 @@ export default function Experience() {
             <Heading>Experience</Heading>
 
             <JobTitle>Shipt</JobTitle>
-            <JobTitleSubheading>Engineer | April 2022 - Present </JobTitleSubheading>
+            <JobTitleSubheading><span>Engineer</span> | April 2022 - Present </JobTitleSubheading>
             <ul>
-                <Description>
-                    Architecting, engineering, and leading an effort to new features improving engagement, add to cart, and checkout conversion metrics.
-                </Description>
-                <Description>
-                    Collaborate with designers in Figma to brainstorm, tweak, and implement new features.
-                </Description>
-                <Description>
-                    Work with data science partners to set up Segment analytics tracking and A/B testing.
-                </Description>
-                <Description>Build performant, pixel-perfect React components that communicate with REST APIs.</Description>
-                <Description>Meet weekly with associate engineers to mentor, investigate bugs, and pair-program together.</Description>
-                <Description>
-                    Assisted in the migration from redux to react query thus helping improve readability and performance.
-                </Description>
-                <Description>
-                    Worked with the marketing and design team to implement a native product advertising model to the web app. This introduced a new and significantly profitable revenue stream for the company.
-                </Description>
             </ul>
 
             <JobTitle>Shipt</JobTitle>
-            <JobTitleSubheading>Associate Engineer | September 2021 - April 2022 </JobTitleSubheading>
+            <JobTitleSubheading><span>Associate Engineer</span> | September 2021 - April 2022</JobTitleSubheading>
             <ul>
                 <Description>Assisting marketing team with building landing pages.</Description>
                 <Description>
@@ -54,7 +37,7 @@ export default function Experience() {
             </ul>
 
             <JobTitle>SAP</JobTitle>
-            <JobTitleSubheading>Technical Support Engineer | Jan 2019 - October 2021 </JobTitleSubheading>
+            <JobTitleSubheading><span>Technical Support Engineer</span> | Jan 2019 - October 2021 </JobTitleSubheading>
             <ul>
                 <Description>Provide technical support for SAP cloud commissions product while delivering quality and timely
                     results per SLA</Description>
@@ -80,13 +63,12 @@ export default function Experience() {
 }
 
 const Wrapper = styled.div`
-    background-color: green;
     padding: 32px;
 `
 const Heading = styled.h3`
     font-family: ${raleway.style.fontFamily};
     font-weight: 400;
-    color: white;
+    color: #001F3F;
     font-size: 48px;
     z-index: 99;
     margin-top: 0;
@@ -94,7 +76,7 @@ const Heading = styled.h3`
 const Description = styled.li`
     font-family: ${raleway.style.fontFamily};
     font-weight: 400;
-    color: white;
+    color: #333333;;
     font-size: 18px;
     z-index: 99;
     margin: 8px;
@@ -102,7 +84,13 @@ const Description = styled.li`
 const JobTitle = styled(Heading)`
     font-size: 32px;
     margin: 0;
+    color: #333333;;
 `
 const JobTitleSubheading = styled(Heading)`
     font-size: 24px;
+    color: #333333;
+
+    span {
+        color: white;
+    }
 `

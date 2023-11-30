@@ -16,7 +16,7 @@ export default function Header() {
                     <SubTitle>Software Engineer</SubTitle>
                     <SubHeading>Crafting Digital Experiences | JavaScript, TypeScript, React, Next.js Enthusiast</SubHeading>
                 </div>
-                <Image src="/headshot.png" width={368} height={368} alt='headshot' />
+                <ImageWrapper><Image src="/headshot.png" fill alt='headshot' /></ImageWrapper>
             </Content>
 
         </Wrapper>
@@ -26,7 +26,6 @@ export default function Header() {
 const Wrapper = styled.div`
     min-height: 480px;
     width: 100%;
-    background-color: yellow;
     display: flex;
     align-items: center;
 `
@@ -41,7 +40,7 @@ const Title = styled.h1`
 const SubTitle = styled.h3`
     font-family: ${raleway.style.fontFamily};
     font-weight: 400;
-    color: white;
+    color: #001F3F;
     font-size: 48px;
     z-index: 99;
     margin: 0;
@@ -58,4 +57,11 @@ const Content = styled.div`
     justify-content: space-around;
     display: flex;
     padding: 32px;
+`
+const ImageWrapper = styled.div`
+    width: 368px;
+    height: 368px;
+    position: relative;
+    flex-shrink: 0;
+    object-fit: contain;
 `

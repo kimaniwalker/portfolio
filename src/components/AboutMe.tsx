@@ -28,16 +28,19 @@ export default function AboutMe() {
 }
 
 const Wrapper = styled.div`
-    background-color: red;
+    background: linear-gradient(to right, #94BBE9, #DCDFAB);
     padding: 32px;
+    border-radius: 24px;
+    box-shadow: 7px 10px 18px 0px rgba(0,0,0,0.75);
 `
 const Heading = styled.h3`
     font-family: ${raleway.style.fontFamily};
     font-weight: 400;
-    color: white;
+    color: #001F3F;
     font-size: 48px;
     z-index: 99;
     margin: 0;
+    
 `
 const Description = styled.h4`
     font-family: ${raleway.style.fontFamily};
